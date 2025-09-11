@@ -94,6 +94,75 @@ Implementar e demonstrar os algoritmos clássicos de **travessia em profundidade
 
 ---
 
+### Atividade 4 — Árvore AVL com Rotações  
+
+**Objetivo:**  
+Compreender a importância do **balanceamento em árvores de busca** e implementar uma **Árvore AVL**, incluindo cálculo do fator de balanceamento e rotações.
+
+**O que foi implementado:**  
+- Classe `AVLTree` em Python.  
+- Inserção com verificação de balanceamento.  
+- Rotações suportadas:  
+  - Simples à Direita  
+  - Simples à Esquerda  
+  - Dupla Direita  
+  - Dupla Esquerda  
+- Cálculo do fator de balanceamento de cada nó.  
+
+**Demonstrações:**  
+- Árvore com valores fixos:  
+  - Inserção da sequência `[10, 20, 30]`, mostrando rotação simples.  
+  - Inserção da sequência `[10, 30, 20]`, mostrando rotação dupla.  
+- Árvore com valores randômicos:  
+  - Inserção de 20 inteiros aleatórios.  
+  - Visualização final comprovando que a árvore mantém **altura mínima** e **balanceamento automático**.  
+
+**Critérios de avaliação:**  
+- Implementação correta do fator de balanceamento.  
+- Rotações funcionando nos quatro casos.  
+- Clareza na demonstração gráfica do balanceamento.  
+
+---
+
+### Atividade 5 — Implementação Completa de Árvore AVL  
+
+**Objetivo:**  
+Implementar **do zero** a lógica de uma Árvore AVL em Python, com suporte a:  
+- Inserção balanceada.  
+- Deleção com balanceamento.  
+- Busca por valores e intervalos.  
+- Cálculo da profundidade de um nó.  
+
+**O que foi implementado:**  
+- Classe `ArvoreAVL` e classe auxiliar `No`.  
+- Métodos auxiliares:  
+  - `obter_altura`  
+  - `obter_fator_balanceamento`  
+  - `obter_no_valor_minimo`  
+  - Atualização de altura  
+- Rotações:  
+  - Direita  
+  - Esquerda  
+  - Duplas (quando necessário)  
+- Operações principais:  
+  - `inserir`  
+  - `deletar`  
+  - `encontrar_nos_intervalo`  
+  - `obter_profundidade_no`  
+
+**Demonstrações:**  
+- Inserção da sequência `[9, 5, 10, 0, 6, 11, -1, 1, 2]`.  
+- Deleção de nós `[10, 11]`.  
+- Busca de nós dentro do intervalo `[1, 9]`.  
+- Cálculo da profundidade do nó `6`.  
+
+**Critérios de avaliação:**  
+- Implementação funcional de inserção e deleção com balanceamento.  
+- Métodos de busca funcionando corretamente.  
+- Estrutura da árvore se mantém como uma **AVL válida** após cada operação.  
+
+---
+
 ## ⚙️ Tecnologias Utilizadas
 
 - **Linguagem:** Python 3.8+  
@@ -109,5 +178,6 @@ Implementar e demonstrar os algoritmos clássicos de **travessia em profundidade
  ```bash
  git clone https://github.com/Kosta-dev/Conceito-de-Arvore---Estrutura-de-dados.git
  cd Conceito-de-Arvore---Estrutura-de-dados
+
 
 
